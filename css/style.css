@@ -44,7 +44,6 @@ body {
 }
 
 .carousel {
-    display: flex;
     overflow-x: hidden;
     scroll-behavior: auto;
     gap: 50px;

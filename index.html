@@ -7,6 +7,8 @@
     <!--BootStrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Remix Icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
     <!--CSS File-->
     <link rel="stylesheet" href="./css/style.css">
     <!--TailwindCSS CDN-->
@@ -119,12 +121,61 @@
 
     <main class="h-[4000px]">
         <section class="border-r-0 border-l-0 ml-0 mr-0 mb-[100px] bg-[rgb(179,66,194)]/20 p-2 flex justify-center ">
-            <div class="carousel" id="text-animate">
+            <div class="carousel flex items-center" id="text-animate">
                 <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl m-0">➲</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Branding</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl m-0">➲</p>
                 <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
-                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
-                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl m-0">➲</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Branding</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl m-0">➲</p>
             </div>
+        </section>
+
+        <section class="flex gap-[100px] justify-center items-center">
+            <div class="max-w-[400px]">
+                <div class="title mb-4">
+                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Sobre</p>
+                    <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
+                </div>
+
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam
+                    error magnam, tempora aut, excepturi eius tempore aperiam mollitia qui ex dolore vel cum dolorem
+                    tenetur recusandae nesciunt, officiis accusamus.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, delectus non cum sed atque culpa
+                    earum dolores impedit necessitatibus ut sit beatae!
+                </p>
+
+                <div class="flex gap-3">
+                    <a href="#"
+                        class="no-underline w-10 h-10 bg-[rgb(179,66,194)] rounded-full flex justify-center items-center hover:bg-[rgb(102,38,110)] transition-all">
+                        <i class="ri-whatsapp-fill text-white text-lg"></i>
+                    </a>
+                    <a href="#"
+                        class="no-underline w-10 h-10 bg-[rgb(179,66,194)] rounded-full flex justify-center items-center hover:bg-[rgb(102,38,110)] transition-all">
+                        <i class="ri-instagram-fill text-white text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group w-[400px] h-[300px] [perspective:1000px]">
+                <div
+                    class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <!-- Frente -->
+                    <div class="absolute inset-0 [backface-visibility:hidden]">
+                        <img src="./components/img/office.jpg" class="w-full h-full object-cover rounded-2xl shadow-lg"
+                            alt="">
+                    </div>
+                    <!-- Verso -->
+                    <div class="absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                        <img src="./components/img/office2.jpg" class="w-full h-full object-cover rounded-2xl shadow-lg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
