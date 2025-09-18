@@ -1,50 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="components/fonts/fonts.css">
-    <title>Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--BootStrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--CSS File-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--TailwindCSS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./components/img/logo.svg" type="image/x-icon">
+    <title>Marketing Landing Page</title>
 </head>
+
 <body>
+    <nav class="navbar fixed-top bg-transparent p-3">
+        <div class="container-fluid">
+            <div class="flex items-center gap-1">
+                <img src="./components/img/logo.svg" class="w-[45px]">
+                <p class="font-roboto-condensed m-0 text-[rgb(179,66,194)] text-3xl font-bold">UPTREND</p>
+            </div>
 
-    <header> <!--CABECALHO-->
-        <div id="title">
-            <h1>Marketing</h1>
-            <h1>Criativo</h1>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="navbar-nav ms-auto d-none d-lg-flex flex-row gap-5 items-center">
+                <li class="nav-item">
+                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
+                        style="text-decoration: none;">
+                        INICIO
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[rgb(179,66,194)] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
+                        style="text-decoration: none;">
+                        SOBRE
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[rgb(179,66,194)] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
+                        style="text-decoration: none;">
+                        SERVIÇOS
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[rgb(179,66,194)] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
+                        style="text-decoration: none;">
+                        PLANOS
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[rgb(179,66,194)] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <button
+                    class=" font-roboto-condensed p-2 w-30 border-1 border-[rgb(179,66,194)] rounded text-5xl text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all font-bold">
+                    CONTATO
+                </button>
+            </ul>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Planos</a>
+                        </li>
+                        <button
+                            class="p-2 w-30 border-1 border-[rgb(179,66,194)] rounded text-3xl text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all">
+                            Contato
+                        </button>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <ul>
-            <a href="#"><li>Inicio</li></a>
-            <a href="#"><li>Serviço</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a href="#" id="inscreva-se-btn"><li>Já tem uma conta?</li></a>
-        </ul>
-    </header>
-
-    <main> <!--CONTEUDO-->
-        <aside>
-            <h2><span>Inscreva-se agora</span></h2>
-            <h2>na Newsletter</h2>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </nav>
+    <section class="banner h-[100vh] flex justify-center items-center gap-[150px] pt-5">
+        <div class="max-w-[500px]">
+            <p class="font-roboto-condensed text-[rgb(179,66,194)] text-5xl font-extrabold">Marketing de Conteudo para
+                sua Empresa!</p>
+            <p class="font-roboto-condensed text-2xl font-medium text-gray-400">Tudo que vc precisa em um unico lugar.
             </p>
-            <form>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="submit" value="Enviar">
-            </form>
-        </aside>
+            <p class="text-gray-400 font-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore iure
+                natus modi
+                veniam facere molestias
+                distinctio quasi. Rem architecto saepe aut sunt qui possimus, doloribus quis? Voluptate minima
+                aspernatur alis.</p>
+            <button
+                class="p-2 w-30 border-1 border-[rgb(179,66,194)] rounded text-3xl text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all">Veja
+                mais ⤵</button>
+        </div>
+        <div>
+            <img class="animation-img w-[330px]" src="./components/img/banner.svg" alt="marketing-img">
+        </div>
+    </section>
 
-        <article>
-            <img src="./components/img/77d0a7c454e658833800528e748edbe9.png" alt="mulher meditando">
-        </article>
+    <main class="h-[4000px]">
+        <section class="border-r-0 border-l-0 ml-0 mr-0 mb-[100px] bg-[rgb(179,66,194)]/20 p-2 flex justify-center ">
+            <div class="carousel" id="text-animate">
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
+                <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
+            </div>
+        </section>
     </main>
 
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
 </body>
+
 </html>
