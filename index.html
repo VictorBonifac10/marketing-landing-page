@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <!--Header/Navbar-->
     <nav class="navbar fixed-top bg-transparent p-3">
         <div class="container-fluid">
             <div class="flex items-center gap-1">
@@ -99,6 +100,7 @@
             </div>
         </div>
     </nav>
+    <!--Top Banner-->
     <section class="banner h-[100vh] flex justify-center items-center gap-[150px] pt-5">
         <div class="max-w-[500px]">
             <p class="font-roboto-condensed text-[rgb(179,66,194)] text-5xl font-extrabold">Marketing de Conteudo para
@@ -118,8 +120,9 @@
             <img class="animation-img w-[330px]" src="./components/img/banner.svg" alt="marketing-img">
         </div>
     </section>
-
+    <!--Content Main-->
     <main class="h-[4000px]">
+        <!--Effect-->
         <section class="border-r-0 border-l-0 ml-0 mr-0 mb-[100px] bg-[rgb(179,66,194)]/20 p-2 flex justify-center ">
             <div class="carousel flex items-center" id="text-animate">
                 <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
@@ -132,11 +135,11 @@
                 <p class="font-bitcount text-[rgb(179,66,194)] text-8xl m-0">➲</p>
             </div>
         </section>
-
-        <section class="flex gap-[100px] justify-center items-center">
+        <!--About US-->
+        <section class="flex gap-[100px] justify-center items-center mb-5">
             <div class="max-w-[400px]">
                 <div class="title mb-4">
-                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Sobre</p>
+                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossa Agência</p>
                     <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
                 </div>
 
@@ -159,7 +162,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="group w-[400px] h-[300px] [perspective:1000px]">
                 <div
                     class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -175,7 +177,42 @@
                     </div>
                 </div>
             </div>
-
+        </section>
+        <!--Our Solutions-->
+        <section class="flex gap-[100px] justify-center items-center mb-5">
+            <div class="max-w-[400px]">
+                <div class="title mb-4">
+                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossa Agência</p>
+                    <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
+                </div>
+                <img class="animation-img w-[330px]" src="./components/img/banner.svg" alt="marketing-img">
+            </div>
+            <div>
+                <!--Card-One-->
+                <div class="card-one">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Mostrar / Ocultar
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body max-w-[400px] bg-transparent text-gray-400">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Clients-->
+        <section class="flex gap-[100px] justify-center items-center">
+            <div>
+                <div class="title mb-4">
+                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Clientes</p>
+                    <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
+                </div>
+            </div>
         </section>
     </main>
 
