@@ -121,7 +121,7 @@
         </div>
     </section>
     <!--Content Main-->
-    <main class="h-[4000px]">
+    <main class="h-[4000px] flex flex-col">
         <!--Effect-->
         <section class="border-r-0 border-l-0 ml-0 mr-0 mb-[100px] bg-[rgb(179,66,194)]/20 p-2 flex justify-center ">
             <div class="carousel flex items-center" id="text-animate">
@@ -136,13 +136,12 @@
             </div>
         </section>
         <!--About US--><br><br><br><br>
-        <section class="flex gap-[100px] justify-center items-center mt-5 mb-5">
+        <div class="title m-5 mb-3 pl-5">
+            <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossa História</p>
+            <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
+        </div>
+        <section class="flex gap-[100px] justify-center items-center">
             <div class="max-w-[400px]">
-                <div class="title mb-5">
-                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossa Agência</p>
-                    <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
-                </div>
-
                 <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam
                     error magnam, tempora aut, excepturi eius tempore aperiam mollitia qui ex dolore vel cum dolorem
                     tenetur recusandae nesciunt, officiis accusamus.
@@ -165,12 +164,12 @@
             <div class="group w-[400px] h-[300px] [perspective:1000px]">
                 <div
                     class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <!-- Frente -->
+                    <!-- Front-Img -->
                     <div class="absolute inset-0 [backface-visibility:hidden]">
                         <img src="./components/img/office.jpg" class="w-full h-full object-cover rounded-2xl shadow-lg"
                             alt="">
                     </div>
-                    <!-- Verso -->
+                    <!-- Back-Img -->
                     <div class="absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                         <img src="./components/img/office2.jpg" class="w-full h-full object-cover rounded-2xl shadow-lg"
                             alt="">
@@ -179,16 +178,14 @@
             </div>
         </section>
         <!--Our Solutions--><br><br><br>
-        <section class="flex gap-[130px] justify-center items-center mt-5 mb-5">
-            <div class="max-w-[400px]">
-                <div class="title mb-5">
-                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Serviços</p>
-                    <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
-                </div>
-                <img id="img-effect" class="w-[350px] m-0" src="./components/img/ideia1.svg" alt="marketing-img">
-            </div>
+        <div class="title m-5 mb-3 pl-5">
+            <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Serviços</p>
+            <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
+        </div>
+        <section class="flex gap-[130px] justify-center items-center">
+            <img id="img-effect" class="w-[400px] m-0 p-0" src="./components/img/services (1).png" alt="marketing-img">
             <div class="w-full max-w-[450px]">
-                <!-- item -->
+                <!-- Item 1 -->
                 <div class="border-b border-neutral-800">
                     <button id="acc-btn-1" aria-controls="acc-panel-1" aria-expanded="false"
                         class="accordion-btn w-full flex items-center justify-between py-6 text-3xl text-neutral-300 text-left p-3 pb-4">
@@ -202,12 +199,12 @@
                     </button>
                     <div id="acc-panel-1" class="accordion-panel text-neutral-400">
                         <div class="p-4 pb-8">
-                            Gestão de redes sociais: calendário, produção de posts, análise de resultados e
-                            otimização.
+                            Planejamento estratégico com calendário de publicações, criação de conteúdos impactantes,
+                            análise de métricas e otimização contínua para melhores resultados.
                         </div>
                     </div>
                 </div>
-
+                <!-- Item 2 -->
                 <div class="border-b border-neutral-800">
                     <button id="acc-btn-2" aria-controls="acc-panel-2" aria-expanded="false"
                         class="accordion-btn w-full flex items-center justify-between py-6 text-3xl text-neutral-300 text-left p-3 pb-4">
@@ -221,11 +218,12 @@
                     </button>
                     <div id="acc-panel-2" class="accordion-panel text-neutral-400">
                         <div class="p-4 pb-8">
-                            Campanhas em Google Ads e Meta Ads com otimização de ROI e testes A/B.
+                            Criação e gestão de campanhas no Google Ads e Meta Ads, com foco em
+                            otimização de ROI, segmentação precisa e testes A/B para maximizar resultados.
                         </div>
                     </div>
                 </div>
-
+                <!-- Item 3 -->
                 <div class="border-b border-neutral-800">
                     <button id="acc-btn-3" aria-controls="acc-panel-3" aria-expanded="false"
                         class="accordion-btn w-full flex items-center justify-between py-6 text-3xl text-neutral-300 text-left p-3 pb-4">
@@ -239,11 +237,12 @@
                     </button>
                     <div id="acc-panel-3" class="accordion-panel text-neutral-400">
                         <div class="p-4 pb-8">
-                            Planejamento estratégico, análise de processos e implementação de métricas.
+                            Análise detalhada do seu negócio, identificação de oportunidades,
+                            definição de estratégias e suporte para tomada de decisão e crescimento sustentável.
                         </div>
                     </div>
                 </div>
-
+                <!-- Item 4 -->
                 <div class="border-b border-neutral-800">
                     <button id="acc-btn-4" aria-controls="acc-panel-4" aria-expanded="false"
                         class="accordion-btn w-full flex items-center justify-between py-6 text-3xl text-neutral-300 text-left p-3 pb-4">
@@ -256,25 +255,163 @@
                     </button>
                     <div id="acc-panel-4" class="accordion-panel text-neutral-400">
                         <div class="p-4 pb-8">
-                            Produção e edição de vídeos institucionais, reels e material promocional.
+                            Produção de vídeos e conteúdos criativos para fortalecer sua marca, engajar seu público e
+                            transmitir sua mensagem de forma profissional e atrativa.
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Clients-->
-        <section class="flex gap-[100px] justify-center items-center">
-            <div>
-                <div class="title mb-4">
-                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Clientes</p>
-                    <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
-                </div>
+
+        <!--Our Clients--><br><br><br>
+        <div class="title m-5 mb-3 pl-5">
+            <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Parceiros</p>
+            <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
+        </div>
+
+        <section class="flex flex-wrap gap-[100px] justify-center p-2">
+            <!-- Texto -->
+            <div class="flex-1 max-w-[400px]">
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam
+                    error magnam, tempora aut, excepturi eius tempore aperiam mollitia qui ex dolore vel cum dolorem
+                    tenetur recusandae nesciunt, officiis accusamus.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, delectus non cum sed atque culpa
+                    earum dolores impedit necessitatibus ut sit beatae!
+                </p>
             </div>
+            <!-- Grid de cards -->
+            <div id="client-grid"
+                class="max-w-[350px] flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
+            </div>
+        </section>
+
+        <!-- Plains --><br><br><br>
+        <div class="title m-5 mb-3 pl-5">
+            <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Planos Imperdivéis </p>
+            <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
+        </div>
+
+        <section class="w-full max-w-5xl mx-auto mt-5 p-6">
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse rounded-lg overflow-hidden shadow-lg">
+                    <thead>
+                        <tr class="bg-[rgb(103,42,111)] text-white">
+                            <th class="p-4 text-left">Serviços</th>
+                            <th class="p-4 text-center">Plano Pro<br><span class="text-sm text-gray-300">(1 mês)</span>
+                            </th>
+                            <th class="p-4 text-center">Plano Pro Max<br><span class="text-sm text-gray-300">(6
+                                    meses)</span></th>
+                            <th class="p-4 text-center bg-[rgb(179,66,194)]">Plano Pro Max Turbo<br><span
+                                    class="text-sm text-gray-200">(1 ano)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-[#313131]">
+                        <tr class="border-b">
+                            <td class="p-4 font-medium text-white">Gestão de Redes Sociais</td>
+                            <td class="p-4 text-center text-lg text-white hover:bg-[rgb(179,66,194)] transition">R$ 500
+                            </td>
+                            <td class="p-4 text-center text-lg text-white hover:bg-[rgb(179,66,194)] transition">R$
+                                2.700</td>
+                            <td class="p-4 text-center text-lg bg-white font-bold text-[rgb(179,66,194)]">R$ 4.900</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4 font-medium  text-white">Criação de Artes Mensais</td>
+                            <td class="p-4 text-center text-lg text-white hover:bg-[rgb(179,66,194)] transition">R$ 300
+                            </td>
+                            <td class="p-4 text-center text-lg text-white hover:bg-[rgb(179,66,194)] transition">R$
+                                3.500</td>
+                            <td class="p-4 text-center text-lg bg-white font-bold text-[rgb(179,66,194)]">R$ 5.900</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4 font-medium text-white">Gestão de Tráfego Pago</td>
+                            <td class="p-4 text-center text-lg text-white hover:bg-[rgb(179,66,194)] transition">R$ 600
+                            </td>
+                            <td class="p-4 text-center text-lg text-white hover:bg-[rgb(179,66,194)] transition">R$
+                                3.300</td>
+                            <td class="p-4 text-center text-lg bg-white font-bold text-[rgb(179,66,194)]"> R$ 5.900</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4 font-medium text-white">Relatórios e Consultoria</td>
+                            <td class="p-4 text-center text-lg text-white hover:bg-[rgb(179,66,194)] transition">R$ 700
+                            </td>
+                            <td class="p-4 text-center text-lg text-white hover:bg-[rgb(179,66,194)] transition">R$1.500
+                            </td>
+                            <td class="p-4 text-center text-lg bg-white font-bold text-[rgb(179,66,194)]">R$ 2.900</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-center text-gray-500 text-sm mt-4">
+                * Valores estimados — podem variar conforme a necessidade do cliente.
+            </p>
+        </section>
+
+        <!-- Depoiments --><br><br><br>
+        <div class="title m-5 mb-3 pl-5">
+            <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Depoimentos</p>
+            <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
+        </div>
+
+        <section class="relative w-full max-w-xl mx-auto">
+            <!-- botão anterior -->
+            <button id="prev" aria-label="Anterior"
+                class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white p-2 rounded-full shadow hover:scale-105">
+                &#10094;
+            </button>
+
+            <!-- carrossel -->
+            <div id="carousel" class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth"
+                style="scroll-behavior: smooth;">
+
+                <!-- Card 1 -->
+                <article
+                    class="card snap-center flex-shrink-0 w-[85%] sm:w-[60%] mx-auto bg-white p-4 rounded-lg flex items-center gap-4 shadow hover:scale-105 transition">
+                    <img src="./components/img/logo.svg" width="50" alt="depoimentos">
+                    <div>
+                        <p class="text-sm mb-2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quos ipsa neque sapiente
+                            maiores accusantium.
+                        </p>
+                        <p class="text-[rgb(179,66,194)] font-bold text-sm">Wesley Camargo - Gerente de Vendas</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article
+                    class="card snap-center flex-shrink-0 w-[85%] sm:w-[60%] mx-auto bg-white p-4 rounded-lg flex items-center gap-4 shadow hover:scale-105 transition">
+                    <img src="./components/img/logo.svg" width="50" alt="depoimentos">
+                    <div>
+                        <p class="text-sm mb-2">
+                            Outro depoimento incrível para mostrar o funcionamento do carrossel. Experiência excelente!
+                        </p>
+                        <p class="text-[rgb(179,66,194)] font-bold text-sm">Maria Souza - Produtora Rural</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article  class="card snap-center flex-shrink-0 w-[85%] sm:w-[60%] mx-auto bg-white p-4 rounded-lg flex items-center gap-4 shadow hover:scale-105 transition">
+                    <img src="./components/img/logo.svg" width="50" alt="depoimentos">
+                    <div>
+                        <p class="text-sm mb-2">
+                            Atendimento ágil e de confiança. Recomendo demais essa empresa!
+                        </p>
+                        <p class="text-[rgb(179,66,194)] font-bold text-sm">João Silva - Empresário</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- botão próximo -->
+            <button id="next" aria-label="Próximo"
+                class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white p-2 rounded-full shadow hover:scale-105">
+                &#10095;
+            </button>
         </section>
     </main>
 
     <!--Script-->
-    <script src="./scripts/script.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
     <!--Collapse Effect-->
     <script src="./scripts/collapse.js"></script>
     <!--BootStrap Script-->

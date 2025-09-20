@@ -51,14 +51,14 @@
 
 const img = document.querySelector('#img-effect')
 const btn1 = document.querySelector('#acc-btn-1').addEventListener('click', () => {
-    img.src = './components/img/gestaoderedes.svg';
+    img.src = './components/img/services (1).png';
 })
 const btn2 = document.querySelector('#acc-btn-2').addEventListener('click', () => {
-    img.src = './components/img/trafegopago.svg';
+    img.src = './components/img/services (2).png';
 })
 const btn3 = document.querySelector('#acc-btn-3').addEventListener('click', () => {
-    img.src = './components/img/gestaodenegocios.svg';
+    img.src = './components/img/services (3).png';
 })
 const btn4 = document.querySelector('#acc-btn-4').addEventListener('click', () => {
-    img.src = './components/img/audiovisual.svg';
+    img.src = './components/img/services (4).png';
 })

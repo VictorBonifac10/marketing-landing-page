@@ -74,3 +74,14 @@ body {
     overflow: hidden;
     transition: max-height .28s ease;
 }
+
+/*Depoiments*/
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
