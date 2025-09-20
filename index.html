@@ -117,7 +117,7 @@
                 mais ⤵</button>
         </div>
         <div>
-            <img class="animation-img w-[330px]" src="./components/img/banner.svg" alt="marketing-img">
+            <img class="animation-img w-[400px]" src="./components/img/banner.svg" alt="marketing-img">
         </div>
     </section>
     <!--Content Main-->
@@ -135,10 +135,10 @@
                 <p class="font-bitcount text-[rgb(179,66,194)] text-8xl m-0">➲</p>
             </div>
         </section>
-        <!--About US-->
-        <section class="flex gap-[100px] justify-center items-center mb-5">
+        <!--About US--><br><br><br><br>
+        <section class="flex gap-[100px] justify-center items-center mt-5 mb-5">
             <div class="max-w-[400px]">
-                <div class="title mb-4">
+                <div class="title mb-5">
                     <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossa Agência</p>
                     <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
                 </div>
@@ -178,28 +178,85 @@
                 </div>
             </div>
         </section>
-        <!--Our Solutions-->
-        <section class="flex gap-[100px] justify-center items-center mb-5">
+        <!--Our Solutions--><br><br><br>
+        <section class="flex gap-[130px] justify-center items-center mt-5 mb-5">
             <div class="max-w-[400px]">
-                <div class="title mb-4">
-                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossa Agência</p>
+                <div class="title mb-5">
+                    <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Serviços</p>
                     <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
                 </div>
-                <img class="animation-img w-[330px]" src="./components/img/banner.svg" alt="marketing-img">
+                <img id="img-effect" class="w-[350px] m-0" src="./components/img/ideia1.svg" alt="marketing-img">
             </div>
-            <div>
-                <!--Card-One-->
-                <div class="card-one">
-                    <p class="d-inline-flex gap-1">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            Mostrar / Ocultar
-                        </button>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body max-w-[400px] bg-transparent text-gray-400">
-                            Some placeholder content for the collapse component. This panel is hidden by default but
-                            revealed when the user activates the relevant trigger.
+            <div class="w-full max-w-[450px]">
+                <!-- item -->
+                <div class="border-b border-neutral-800">
+                    <button id="acc-btn-1" aria-controls="acc-panel-1" aria-expanded="false"
+                        class="accordion-btn w-full flex items-center justify-between py-6 text-3xl text-neutral-300 text-left p-3 pb-4">
+                        <div class="flex gap-3 items-center">
+                            <i class="ri-instagram-line text-lg text-[rgb(179,66,194)]"></i>
+                            <span
+                                class="truncate font-roboto-condensed font-bold text-[rgb(179,66,194)] text-2xl">Geren.
+                                de Redes Sociais</span>
+                        </div>
+                        <span class="icon">+</span>
+                    </button>
+                    <div id="acc-panel-1" class="accordion-panel text-neutral-400">
+                        <div class="p-4 pb-8">
+                            Gestão de redes sociais: calendário, produção de posts, análise de resultados e
+                            otimização.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-b border-neutral-800">
+                    <button id="acc-btn-2" aria-controls="acc-panel-2" aria-expanded="false"
+                        class="accordion-btn w-full flex items-center justify-between py-6 text-3xl text-neutral-300 text-left p-3 pb-4">
+                        <div class="flex gap-3 items-center">
+                            <i class="ri-refund-2-line text-lg text-[rgb(179,66,194)]"></i>
+                            <span
+                                class="truncate font-roboto-condensed font-bold text-[rgb(179,66,194)] text-2xl">Gestão
+                                de Tráfego Pago</span>
+                        </div>
+                        <span class="icon">+</span>
+                    </button>
+                    <div id="acc-panel-2" class="accordion-panel text-neutral-400">
+                        <div class="p-4 pb-8">
+                            Campanhas em Google Ads e Meta Ads com otimização de ROI e testes A/B.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-b border-neutral-800">
+                    <button id="acc-btn-3" aria-controls="acc-panel-3" aria-expanded="false"
+                        class="accordion-btn w-full flex items-center justify-between py-6 text-3xl text-neutral-300 text-left p-3 pb-4">
+                        <div class="flex gap-3 items-center">
+                            <i class="ri-pie-chart-line text-lg text-[rgb(179,66,194)] hover:"></i>
+                            <span
+                                class="truncate font-roboto-condensed font-bold text-[rgb(179,66,194)] text-2xl">Consultoria
+                                de Negócios</span>
+                        </div>
+                        <span class="icon">+</span>
+                    </button>
+                    <div id="acc-panel-3" class="accordion-panel text-neutral-400">
+                        <div class="p-4 pb-8">
+                            Planejamento estratégico, análise de processos e implementação de métricas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-b border-neutral-800">
+                    <button id="acc-btn-4" aria-controls="acc-panel-4" aria-expanded="false"
+                        class="accordion-btn w-full flex items-center justify-between py-6 text-3xl text-neutral-300 text-left p-3 pb-4">
+                        <div class="flex gap-3 items-center">
+                            <i class="ri-clapperboard-line text-lg text-[rgb(179,66,194)] "></i>
+                            <span
+                                class="truncate font-roboto-condensed font-bold text-[rgb(179,66,194)] text-2xl">AudioVisual</span>
+                        </div>
+                        <span class="icon">+</span>
+                    </button>
+                    <div id="acc-panel-4" class="accordion-panel text-neutral-400">
+                        <div class="p-4 pb-8">
+                            Produção e edição de vídeos institucionais, reels e material promocional.
                         </div>
                     </div>
                 </div>
@@ -216,13 +273,17 @@
         </section>
     </main>
 
+    <!--Script-->
+    <script src="./scripts/script.js"></script>
+    <!--Collapse Effect-->
+    <script src="./scripts/collapse.js"></script>
+    <!--BootStrap Script-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
-    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

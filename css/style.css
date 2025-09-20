@@ -2,13 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Jersey+15&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /*cor: 179, 66, 194*/
 
+/*All*/
+
 * {
     font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #1b1b1b;
 }
+
+/*Navbar*/
 
 .navbar {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -27,9 +34,12 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/*Float Effect*/
+
 .animation-img {
     animation: float 6s ease-in-out infinite;
 }
+
 
 @keyframes float {
 
@@ -43,6 +53,8 @@ body {
     }
 }
 
+/*Carousel*/
+
 .carousel {
     overflow-x: hidden;
     scroll-behavior: auto;
@@ -53,4 +65,12 @@ body {
 
 .carousel::-webkit-scrollbar {
     display: none;
+}
+
+/*Collapse*/
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .28s ease;
 }
