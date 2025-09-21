@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
     <!--CSS File-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/waveEffect.css">
     <!--TailwindCSS CDN-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--Favicon-->
@@ -101,7 +102,7 @@
         </div>
     </nav>
     <!--Top Banner-->
-    <section class="banner h-[100vh] flex justify-center items-center gap-[150px] pt-5">
+    <section class="banner h-[100vh] flex justify-center items-center gap-[130px] pt-5">
         <div class="max-w-[500px]">
             <p class="font-roboto-condensed text-[rgb(179,66,194)] text-5xl font-extrabold">Marketing de Conteudo para
                 sua Empresa!</p>
@@ -117,11 +118,11 @@
                 mais ⤵</button>
         </div>
         <div>
-            <img class="animation-img w-[400px]" src="./components/img/banner.svg" alt="marketing-img">
+            <img class="animation-img w-[380px]" src="./components/img/banner.svg" alt="marketing-img">
         </div>
     </section>
     <!--Content Main-->
-    <main class="h-[4000px] flex flex-col">
+    <main class="flex flex-col">
         <!--Effect-->
         <section class="border-r-0 border-l-0 ml-0 mr-0 mb-[100px] bg-[rgb(179,66,194)]/20 p-2 flex justify-center ">
             <div class="carousel flex items-center" id="text-animate">
@@ -140,7 +141,7 @@
             <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossa História</p>
             <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
         </div>
-        <section class="flex gap-[100px] justify-center items-center">
+        <section class="flex gap-[130px] justify-center items-center">
             <div class="max-w-[400px]">
                 <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam
                     error magnam, tempora aut, excepturi eius tempore aperiam mollitia qui ex dolore vel cum dolorem
@@ -177,11 +178,58 @@
                 </div>
             </div>
         </section>
+
+        <!--Our Solutions--><br><br><br>
+        <section class="bg-[rgb(135,48,147)]/20 pb-3 w-full">
+            <div class="title m-5 mb-3 pl-5">
+                <p class="font-roboto-condensed font-bold text-white text-3xl m-0">Beneficios</p>
+                <div class="mt-1 w-10 h-1 bg-white rounded-full"></div>
+            </div>
+            <article class="container flex pt-0 p-3 justify-center items-center gap-4 max-md:flex-col">
+                <div
+                    class="flex flex-col justify-center items-center p-0 transition-all hover:scale-105 bg-[rgb(108,54,113)]/20">
+                    <i class="ri-global-fill p-4 text-7xl text-[rgb(179,66,194)]"></i>
+                    <p class="text-base font-semibold mt-3 mb-0 text-[rgb(179,66,194)]">Maior Alcance</p>
+                    <p class="text-sm p-2 mt-0 mb-3 text-center max-w-50 text-gray-400">Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit.
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center p-0 transition-all hover:scale-105 bg-[rgb(108,54,113)]/20">
+                    <i class="ri-shake-hands-fill p-4 text-7xl text-[rgb(179,66,194)]"></i>
+                    <p class="text-base font-semibold mt-3 mb-0 text-[rgb(179,66,194)]">Mais Clientes</p>
+                    <p class="text-sm p-2 mt-0 mb-3 text-center max-w-50 text-gray-400">Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit.
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center p-0 transition-all hover:scale-105 bg-[rgb(108,54,113)]/20">
+                    <i class="ri-store-2-fill p-4 text-7xl text-[rgb(179,66,194)]"></i>
+                    <p class="text-base font-semibold mt-3 mb-0 text-[rgb(179,66,194)]">Relevancia de Mercado</p>
+                    <p class="text-sm p-2 mt-0 mb-3 text-center max-w-50 text-gray-400">Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit.
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center p-0 transition-all hover:scale-105 bg-[rgb(108,54,113)]/20">
+                    <i class="ri-line-chart-fill p-4 text-7xl text-[rgb(179,66,194)]"></i>
+                    <p class="text-base font-semibold mt-3 mb-0 text-[rgb(179,66,194)]">Maior Resultado</p>
+                    <p class="text-sm p-2 mt-0 mb-3 text-center max-w-50 text-gray-400">Lorem ipsum dolor sit
+                        amet
+                        consectetur, adipisicing elit.
+                    </p>
+                </div>
+            </article>
+        </section>
+
         <!--Our Solutions--><br><br><br>
         <div class="title m-5 mb-3 pl-5">
             <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Serviços</p>
             <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
-        </div>
+        </div><br><br>
         <section class="flex gap-[130px] justify-center items-center">
             <img id="img-effect" class="w-[400px] m-0 p-0" src="./components/img/services (1).png" alt="marketing-img">
             <div class="w-full max-w-[450px]">
@@ -263,13 +311,7 @@
             </div>
         </section>
 
-        <!--Our Clients--><br><br><br>
-        <div class="title m-5 mb-3 pl-5">
-            <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Parceiros</p>
-            <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
-        </div>
-
-        <section class="flex flex-wrap gap-[100px] justify-center p-2">
+        <section class="flex flex-wrap gap-[130px] justify-center items-center bg-[rgb(135,48,147)]/20 p-3 w-full">
             <!-- Texto -->
             <div class="flex-1 max-w-[400px]">
                 <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam
@@ -279,6 +321,11 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, delectus non cum sed atque culpa
                     earum dolores impedit necessitatibus ut sit beatae!
                 </p>
+                <div class="flex gap-1 mt-5 justify-center">
+                    <div class="arrow w-[40px] h-[40px] border-r-10 border-t-10 border-transparent"></div>
+                    <div class="arrow w-[40px] h-[40px] border-r-10 border-t-10 border-transparent"></div>
+                    <div class="arrow w-[40px] h-[40px] border-r-10 border-t-10 border-transparent"></div>
+                </div>
             </div>
             <!-- Grid de cards -->
             <div id="client-grid"
@@ -355,60 +402,91 @@
         </div>
 
         <section class="relative w-full max-w-xl mx-auto">
-            <!-- botão anterior -->
-            <button id="prev" aria-label="Anterior"
-                class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white p-2 rounded-full shadow hover:scale-105">
-                &#10094;
-            </button>
-
             <!-- carrossel -->
-            <div id="carousel" class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth"
+            <div id="carousel" class="flex gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth"
                 style="scroll-behavior: smooth;">
 
                 <!-- Card 1 -->
-                <article
-                    class="card snap-center flex-shrink-0 w-[85%] sm:w-[60%] mx-auto bg-white p-4 rounded-lg flex items-center gap-4 shadow hover:scale-105 transition">
-                    <img src="./components/img/logo.svg" width="50" alt="depoimentos">
+                <div class="card flex-shrink-0 flex flex-row p-4 gap-3 shadow hover:scale-105 transition">
+                    <img src="./components/img/depoiments (1).jpg" class="p-1 rounded-full w-[100px]" alt="Depoimentos">
                     <div>
-                        <p class="text-sm mb-2">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quos ipsa neque sapiente
-                            maiores accusantium.
-                        </p>
-                        <p class="text-[rgb(179,66,194)] font-bold text-sm">Wesley Camargo - Gerente de Vendas</p>
+                        <p class="max-w-[280px] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.Harum
+                            rem commodi vitae amet quam aliquid fugiat ipsam odio magni!</p>
+                        <p class="text-[rgb(179,66,194)] text-sm m-0 font-bold">Maicon Wesley - Quality Assurance</p>
                     </div>
-                </article>
-
-                <!-- Card 2 -->
-                <article
-                    class="card snap-center flex-shrink-0 w-[85%] sm:w-[60%] mx-auto bg-white p-4 rounded-lg flex items-center gap-4 shadow hover:scale-105 transition">
-                    <img src="./components/img/logo.svg" width="50" alt="depoimentos">
+                </div>
+                <div class="card flex-shrink-0 flex flex-row p-4 gap-3 shadow hover:scale-105 transition">
+                    <img src="./components/img/depoiments (2).jpg" class="p-1 rounded-full  w-[100px]"
+                        alt="Depoimentos">
                     <div>
-                        <p class="text-sm mb-2">
-                            Outro depoimento incrível para mostrar o funcionamento do carrossel. Experiência excelente!
-                        </p>
-                        <p class="text-[rgb(179,66,194)] font-bold text-sm">Maria Souza - Produtora Rural</p>
+                        <p class="max-w-[280px] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.Harum
+                            rem commodi vitae amet quam aliquid fugiat ipsam odio magni!</p>
+                        <p class="text-[rgb(179,66,194)] text-sm m-0 font-bold">Sarah Franco - Product Owner</p>
                     </div>
-                </article>
-
-                <!-- Card 3 -->
-                <article  class="card snap-center flex-shrink-0 w-[85%] sm:w-[60%] mx-auto bg-white p-4 rounded-lg flex items-center gap-4 shadow hover:scale-105 transition">
-                    <img src="./components/img/logo.svg" width="50" alt="depoimentos">
+                </div>
+                <div class="card flex-shrink-0 flex flex-row p-4 gap-3 shadow hover:scale-105 transition">
+                    <img src="./components/img/depoiments (3).jpg" class="p-1 rounded-full  w-[100px]"
+                        alt="Depoimentos">
                     <div>
-                        <p class="text-sm mb-2">
-                            Atendimento ágil e de confiança. Recomendo demais essa empresa!
-                        </p>
-                        <p class="text-[rgb(179,66,194)] font-bold text-sm">João Silva - Empresário</p>
+                        <p class="max-w-[280px] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.Harum
+                            rem commodi vitae amet quam aliquid fugiat ipsam odio magni!</p>
+                        <p class="text-[rgb(179,66,194)] text-sm m-0 font-bold">Júlia Dants - Software Developer</p>
                     </div>
-                </article>
+                </div>
             </div>
-
+            <!-- botão anterior -->
+            <a id="prev" aria-label="Anterior"
+                class="absolute left-[-100px] top-1/2 -translate-y-1/2 z-20 bg-[rgb(179,66,194)] rounded-full shadow hover:scale-105 cursor-pointer decoration-none">
+                <i class="ri-arrow-left-s-fill text-[rgb(93,43,100)] text-2xl"></i>
+            </a>
             <!-- botão próximo -->
-            <button id="next" aria-label="Próximo"
-                class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white p-2 rounded-full shadow hover:scale-105">
-                &#10095;
-            </button>
+            <a id="next" aria-label="Próximo"
+                class="absolute right-[-100px] top-1/2 -translate-y-1/2 z-20 bg-[rgb(179,66,194)] rounded-full shadow hover:scale-105 cursor-pointer decoration-none">
+                <i class="ri-arrow-right-s-fill text-[rgb(93,43,100)] text-2xl"></i>
+            </a>
         </section>
-    </main>
+    </main><br><br><br><br>
+    <footer class="relative p-[3rm] mt-5">
+        <div class="flex flex-col justify-center items-center relative z-10">
+            <p class="text-3xl font-semibold p-0 mb-3 text-[rgb(120,44,130)] max-md:text-center">Entre em contato
+                conosco e descubra
+                como podemos lhe ajudar!</p>
+            <p class="text-sm p-0 m-0 text-center max-w-150 text-white">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Dolores nostrum nihil sunt tenetur delectus vitae quis ab perspiciatis laboriosam
+                qui
+                totam mollitiadebitis ipsum hic porro, rem excepturi. Nesciunt, corrupti!</p>
+            <div class="w-20 h-1 bg-white rounded-full mt-3 mb-4"></div>
+            <button
+                class="p-3 w-70 bg-[rgb(156,63,169)] text-white transition-all hover:scale-110 hover:bg-[rgb(103,40,111)]">Converse
+                agora</button>
+            <p class="text-sm p-0 mt-5 text-center text-white">Dolores nostrum nihil sunt tenetur delectus vitae
+                quis ab perspiciatis :)</p>
+            <div class="flex gap-4 mb-4">
+                <i
+                    class="bg-white text-[rgb(120,44,130)] p-2 w-10 flex justify-center items-center ri-facebook-fill cursor-pointer transition-all hover:scale-110"></i>
+                <i
+                    class="bg-white text-[rgb(120,44,130)] p-2 w-10 flex justify-center items-center ri-instagram-fill cursor-pointer transition-all hover:scale-110"></i>
+                <i
+                    class="bg-white text-[rgb(120,44,130)] p-2 w-10 flex justify-center items-center ri-youtube-fill cursor-pointer transition-all hover:scale-110"></i>
+            </div>
+        </div>
+
+        <!-- ONDAS AO FUNDO -->
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(120,44,130,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(120,44,130,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(120,44,130,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(120,44,130)" />
+            </g>
+        </svg>
+    </footer>
+
+
 
     <!--Script-->
     <script type="module" src="./scripts/script.js"></script>

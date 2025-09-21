@@ -85,3 +85,58 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+#prev,
+#next {
+    font-style: none;
+    text-decoration: none;
+    color: aliceblue;
+
+    padding: 10px 13px 10px 13px;
+}
+
+/*arrow-effect*/
+
+.arrow {
+    transform: rotate(45deg);
+    animation: move 1s infinite;
+}
+
+.arrow:nth-child(1) {
+    border-color: rgb(102, 48, 108);
+    animation-delay: 0s;
+}
+
+.arrow:nth-child(2) {
+    border-color: rgb(118, 30, 130);
+    animation-delay: 0.2s;
+}
+
+.arrow:nth-child(3) {
+    border-color: rgb(205, 66, 223);
+    animation-delay: 0.4s;
+}
+
+.arrow:nth-child(4) {
+    border-color: rgb(205, 66, 223);
+    animation-delay: 0.4s;
+}
+
+@keyframes move {
+
+    0%,
+    20% {
+        transform: translateX(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateX(10px) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0) rotate(45deg);
+        opacity: 0.5;
+    }
+}
