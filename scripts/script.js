@@ -51,24 +51,29 @@ clientsData.forEach(element => {
 // --> Depoiments
 
 const carousel = document.getElementById('carousel');
-const cards = carousel.querySelectorAll('.card');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
+const dots = document.querySelectorAll('.dot');
 
-function getGapPx() {
-    const g = getComputedStyle(carousel).gap;
-    return g ? parseFloat(g) : 0;
+function goToSlide(index) {
+    const slideWidth = carousel.offsetWidth;
+    carousel.scrollTo({ left: slideWidth * index, behavior: 'smooth' });
+    updateDots(index);
 }
 
-function scrollAmount() {
-    if (!cards.length) return carousel.clientWidth;
-    return cards[0].offsetWidth + getGapPx();
+function updateDots(activeIndex) {
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('bg-[rgb(179,66,194)]', i === activeIndex);
+        dot.classList.toggle('bg-gray-500', i !== activeIndex);
+    });
 }
-
-prev.addEventListener('click', () => {
-    carousel.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+carousel.addEventListener('scroll', () => {
+    const slideWidth = carousel.offsetWidth;
+    const index = Math.round(carousel.scrollLeft / slideWidth);
+    updateDots(index);
 });
 
-next.addEventListener('click', () => {
-    carousel.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+updateDots(0);
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => goToSlide(index));
 });
+
