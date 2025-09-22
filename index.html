@@ -21,19 +21,23 @@
 
 <body>
     <!--Header/Navbar-->
-    <nav class="navbar fixed-top bg-transparent p-3">
-        <div class="container-fluid">
-            <div class="flex items-center gap-1">
-                <img src="./components/img/logo.svg" class="w-[45px]">
-                <p class="font-roboto-condensed m-0 text-[rgb(179,66,194)] text-3xl font-bold">UPTREND</p>
+    <nav class="navbar fixed-top bg-transparent w-full px-4 max-md:px-2 overflow-hidden">
+        <div class="flex flex-wrap items-center justify-between w-full">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 flex-shrink-0 min-w-0">
+                <img src="./components/img/logo.svg" class="w-[45px] flex-shrink-0">
+                <p class="font-roboto-condensed m-0 text-[rgb(179,66,194)] text-3xl font-bold truncate">
+                    UPTREND
+                </p>
             </div>
-
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <!-- Botão mobile -->
+            <button class="navbar-toggler d-lg-none p-2 border rounded flex-shrink-0 mt-2 max-md:mt-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <ul class="navbar-nav ms-auto d-none d-lg-flex flex-row gap-5 items-center">
+            <!-- Menu desktop -->
+            <ul class="navbar-nav ms-auto d-none d-lg-flex flex-row flex-wrap gap-3 items-center mt-2">
                 <li class="nav-item">
                     <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
                         style="text-decoration: none;">
@@ -66,12 +70,17 @@
                             class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[rgb(179,66,194)] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </li>
-                <button
-                    class=" font-roboto-condensed p-2 w-30 border-1 border-[rgb(179,66,194)] rounded text-5xl text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all font-bold">
-                    CONTATO
-                </button>
+
+                <!-- Botão CONTATO -->
+                <li class="flex-shrink-0">
+                    <button
+                        class="font-roboto-condensed px-3 py-2 border border-[rgb(179,66,194)] rounded text-lg text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all font-bold truncate">
+                        CONTATO
+                    </button>
+                </li>
             </ul>
 
+            <!-- Offcanvas mobile -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -79,7 +88,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 flex flex-col gap-3">
                         <li class="nav-item">
                             <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Home</a>
                         </li>
@@ -92,39 +101,50 @@
                         <li class="nav-item">
                             <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Planos</a>
                         </li>
-                        <button
-                            class="p-2 w-30 border-1 border-[rgb(179,66,194)] rounded text-3xl text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all">
-                            Contato
-                        </button>
+                        <li class="flex-shrink-0">
+                            <button
+                                class="px-4 py-2 border border-[rgb(179,66,194)] rounded text-lg text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all font-bold w-full truncate">
+                                Contato
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </nav>
+    </nav><br>
     <!--Top Banner-->
-    <section class="banner h-[100vh] flex justify-center items-center gap-[130px] pt-5 max-md:flex-col">
+    <section class="banner flex justify-center items-center mb-5 max-md:flex-col" style="
+        height: calc(100vh - var(--bs-navbar-height, 70px));  /* altura total menos navbar */
+        padding-top: calc(var(--bs-navbar-height, 70px) + 2rem); /* folga do topo */
+        gap: calc(130px + 2vw); /* espaçamento entre colunas adaptável */
+    ">
         <div class="max-w-[500px] max-md:text-center">
-            <p class="font-roboto-condensed text-[rgb(179,66,194)] text-5xl font-extrabold">Marketing de Conteudo para
-                sua Empresa!</p>
-            <p class="font-roboto-condensed text-2xl font-medium text-gray-400">Tudo que vc precisa em um unico lugar.
+            <p class="font-roboto-condensed text-[rgb(179,66,194)] text-5xl font-extrabold max-md:text-4xl">
+                Marketing de Conteudo para sua Empresa!
             </p>
-            <p class="text-gray-400 font-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore iure
-                natus modi
-                veniam facere molestias
-                distinctio quasi. Rem architecto saepe aut sunt qui possimus, doloribus quis? Voluptate minima
-                aspernatur alis.</p>
+            <p class="font-roboto-condensed text-2xl font-medium text-gray-400 max-md:text-xl">
+                Tudo que vc precisa em um unico lugar.
+            </p>
+            <p class="text-gray-400 font-normal max-md:text-base">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore iure natus modi
+                veniam facere molestias distinctio quasi. Rem architecto saepe aut sunt qui possimus, doloribus quis?
+                Voluptate minima aspernatur alis.
+            </p>
             <button
-                class="p-2 w-30 border-1 border-[rgb(179,66,194)] rounded text-3xl text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all">Veja
-                mais ⤵</button>
+                class="p-2 min-w-[120px] border border-[rgb(179,66,194)] rounded text-3xl text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all max-md:text-2xl">
+                Veja mais ⤵
+            </button>
         </div>
         <div>
             <img class="animation-img w-[380px] max-md:w-[320px]" src="./components/img/banner.svg" alt="marketing-img">
         </div>
     </section>
+
+
     <!--Content Main-->
     <main class="flex flex-col">
         <!--Effect-->
-        <section class="border-r-0 border-l-0 ml-0 mr-0 mb-[100px] bg-[rgb(179,66,194)]/20 p-2 flex justify-center ">
+        <section class="border-r-0 border-l-0 ml-0 mr-0 mb-[100px] bg-[rgb(179,66,194)]/20 p-2 flex justify-center">
             <div class="carousel flex items-center" id="text-animate">
                 <p class="font-bitcount text-[rgb(179,66,194)] text-8xl">Marketing</p>
                 <p class="font-bitcount text-[rgb(179,66,194)] text-8xl m-0">➲</p>
@@ -316,7 +336,8 @@
                 <p class="font-roboto-condensed font-bold text-white text-3xl m-0">Nosso Parceiros</p>
                 <div class="mt-1 w-10 h-1 bg-white rounded-full"></div>
             </div>
-            <article class="flex flex-wrap gap-[130px] justify-center max-md:flex-col max-md:text-center">
+            <article
+                class="flex flex-wrap gap-[130px] justify-center max-md:flex-col max-md:text-center max-md:items-center">
                 <div class="flex-1 max-w-[400px]">
                     <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam
                         error magnam, tempora aut, excepturi eius tempore aperiam mollitia qui ex dolore vel cum dolorem
@@ -326,11 +347,11 @@
                         culpa
                         earum dolores impedit necessitatibus ut sit beatae!
                     </p><br>
-                    <div class="flex gap-1 m-4 w-full justify-start max-md:justify-center max-md[m-0]:">
+                    <dv class="flex gap-1 justify-start max-md:justify-center">
                         <div class="arrow w-[40px] h-[40px] border-r-10 border-t-10 border-transparent"></div>
                         <div class="arrow w-[40px] h-[40px] border-r-10 border-t-10 border-transparent"></div>
                         <div class="arrow w-[40px] h-[40px] border-r-10 border-t-10 border-transparent"></div>
-                    </div>
+                </div>
                 </div>
                 <!-- Grid de cards -->
                 <div id="client-grid"
@@ -407,12 +428,12 @@
             <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
         </div>
 
-        <section class="relative w-full max-w-xl mx-auto flex flex-col items-center overflow-hidden">
-            <!-- carrossel -->
+        <!--<section class="relative w-full max-w-xl mx-auto flex flex-col items-center overflow-hidden">
+         
             <div id="carousel"
                 class="flex gap-3 sm:gap-5 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth px-2"
                 style="scroll-behavior: smooth;">
-                <!-- Card 1 -->
+               
                 <div
                     class="card flex-shrink-0 flex flex-row items-center p-3 gap-3 shadow hover:scale-105 transition w-full max-w-[320px] sm:max-w-[360px] snap-start">
                     <img src="./components/img/depoiments (1).jpg"
@@ -425,7 +446,6 @@
                     </div>
                 </div>
 
-                <!-- Card 2 -->
                 <div
                     class="card flex-shrink-0 flex flex-row items-center p-3 gap-3 shadow hover:scale-105 transition w-full max-w-[320px] sm:max-w-[360px] snap-start">
                     <img src="./components/img/depoiments (2).jpg"
@@ -438,7 +458,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
                 <div
                     class="card flex-shrink-0 flex flex-row items-center p-3 gap-3 shadow hover:scale-105 transition w-full max-w-[320px] sm:max-w-[360px] snap-start">
                     <img src="./components/img/depoiments (3).jpg"
@@ -452,22 +471,18 @@
                 </div>
             </div>
 
-            <!-- navegação -->
             <div class="flex items-center justify-between w-full mt-4 lg:mt-0 lg:absolute lg:inset-0 lg:px-0">
-                <!-- botão anterior -->
                 <a id="prev" aria-label="Anterior" class="bg-[rgb(179,66,194)] rounded-full shadow hover:scale-105 cursor-pointer decoration-none 
                    static lg:absolute lg:left-[-70px] lg:top-1/2 lg:-translate-y-1/2">
                     <i class="ri-arrow-left-s-fill text-[rgb(93,43,100)] text-2xl"></i>
                 </a>
 
-                <!-- botão próximo -->
                 <a id="next" aria-label="Próximo" class="bg-[rgb(179,66,194)] rounded-full shadow hover:scale-105 cursor-pointer decoration-none
                    static lg:absolute lg:right-[-70px] lg:top-1/2 lg:-translate-y-1/2">
                     <i class="ri-arrow-right-s-fill text-[rgb(93,43,100)] text-2xl"></i>
                 </a>
             </div>
-        </section>
-
+        </section>-->
 
     </main><br><br><br><br>
     <footer class="relative p-[3rm] mt-5">
