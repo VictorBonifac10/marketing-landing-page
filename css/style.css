@@ -14,17 +14,13 @@ body {
     background-color: #1b1b1b;
 }
 
-a{
+a {
     color: rgb(179, 66, 194);
     text-decoration: none;
 }
 
 a:hover {
     color: white;
-}
-
-#offcanvasNavbar {
-    background-color: #1b1b1b;
 }
 
 /*Navbar*/
@@ -44,6 +40,12 @@ a:hover {
 .navbar.scrolled {
     background-color: rgba(36, 36, 36, 0.977) !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#offcanvasNavbar {
+    background-color: #1b1b1b;
+    width: 250px;
+    max-width: 80%;
 }
 
 /*Float Effect*/

@@ -109,9 +109,10 @@
             </div>
         </div>
     </nav><br>
+
     <!--Top Banner-->
-    <section class="banner flex justify-center items-center mb-5 max-md:flex-col" style="
-        height: calc(100vh - var(--bs-navbar-height, 70px));  /* altura total menos navbar */
+    <section class="banner flex justify-center items-center mb-5 max-md:flex-col max-md:pt-[100px]" style="
+        min-height: calc(100vh - var(--bs-navbar-height, 70px));  /* altura mínima, não fixa */
         padding-top: calc(var(--bs-navbar-height, 70px) + 2rem); /* folga do topo */
         gap: calc(130px + 2vw); /* espaçamento entre colunas adaptável */
     ">
@@ -134,8 +135,7 @@
             </a>
         </div>
         <div>
-            <img class=" animation-img w-[380px] max-md:w-[320px]" src="./components/img/banner.svg"
-                alt="marketing-img">
+            <img class="animation-img w-[380px] max-md:w-[320px]" src="./components/img/banner.svg" alt="marketing-img">
         </div>
     </section>
 
@@ -182,7 +182,7 @@
                     </a>
                 </div>
             </div>
-            <div class="group w-[400px] max-md:w-[350px] h-[300px] [perspective:1000px]">
+            <div class="group w-[400px] max-md:w-[250px] h-[300px] [perspective:1000px]">
                 <div
                     class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <!-- Front-Img -->
@@ -529,4 +529,5 @@
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
