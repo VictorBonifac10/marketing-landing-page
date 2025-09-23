@@ -1,4 +1,4 @@
-// -->  impots
+// -->  imports
 
 import { clientsData } from './data.js';
 

@@ -5,7 +5,6 @@
     width: 100%;
     height: 15vh;
     z-index: 0;
-    /* ondas ficam atrás do conteúdo */
     margin-bottom: -7px;
     min-height: 100px;
     max-height: 150px;

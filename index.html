@@ -39,7 +39,7 @@
             <!-- Menu desktop -->
             <ul class="navbar-nav ms-auto d-none d-lg-flex flex-row flex-wrap gap-3 items-center mt-2">
                 <li class="nav-item">
-                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
+                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#home"
                         style="text-decoration: none;">
                         INICIO
                         <span
@@ -47,7 +47,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
+                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#about"
                         style="text-decoration: none;">
                         SOBRE
                         <span
@@ -55,7 +55,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
+                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#solutions"
                         style="text-decoration: none;">
                         SERVIÇOS
                         <span
@@ -63,49 +63,46 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#"
+                    <a class="relative font-roboto-condensed text-white fw-bold text-md group" href="#plains"
                         style="text-decoration: none;">
                         PLANOS
                         <span
                             class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[rgb(179,66,194)] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </li>
-
-                <!-- Botão CONTATO -->
                 <li class="flex-shrink-0">
-                    <button
-                        class="font-roboto-condensed px-3 py-2 border border-[rgb(179,66,194)] rounded text-lg text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all font-bold truncate">
+                    <a href="#contact"
+                        class="font-roboto-condensed p-2 border-1 border-[rgb(179,66,194)] rounded text-md hover:bg-[rgb(179,66,194)] transition-all no-underline"
+                        style="text-decoration: none;">
                         CONTATO
-                    </button>
+                    </a>
                 </li>
             </ul>
 
             <!-- Offcanvas mobile -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-end bg-[#1b1b1b]" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <p class="offcanvas-title text-[rgb(179,66,194)] font-bold text-lg" id="offcanvasNavbarLabel">MENU
+                    </p>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 flex flex-col gap-3">
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Home</a>
+                            <a class="fw-bold text-white" href="#home" style="text-decoration: none;">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Sobre</a>
+                            <a class="fw-bold text-white" href="#about" style="text-decoration: none;">SOBRE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Serviços</a>
+                            <a class="fw-bold text-white" href="#solutions" style="text-decoration: none;">SERVIÇOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold" href="#" style="text-decoration: none;">Planos</a>
+                            <a class="fw-bold text-white" href="#plains" style="text-decoration: none;">PLANOS</a>
                         </li>
-                        <li class="flex-shrink-0">
-                            <button
-                                class="px-4 py-2 border border-[rgb(179,66,194)] rounded text-lg text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all font-bold w-full truncate">
-                                Contato
-                            </button>
+                        <li class="nav-item">
+                            <a class="fw-bold text-white" href="#contact" style="text-decoration: none;">CONTATO</a>
                         </li>
                     </ul>
                 </div>
@@ -118,7 +115,7 @@
         padding-top: calc(var(--bs-navbar-height, 70px) + 2rem); /* folga do topo */
         gap: calc(130px + 2vw); /* espaçamento entre colunas adaptável */
     ">
-        <div class="max-w-[500px] max-md:text-center">
+        <div id="home" class="max-w-[500px] max-md:text-center">
             <p class="font-roboto-condensed text-[rgb(179,66,194)] text-5xl font-extrabold max-md:text-4xl">
                 Marketing de Conteudo para sua Empresa!
             </p>
@@ -130,13 +127,15 @@
                 veniam facere molestias distinctio quasi. Rem architecto saepe aut sunt qui possimus, doloribus quis?
                 Voluptate minima aspernatur alis.
             </p>
-            <button
-                class="p-2 min-w-[120px] border border-[rgb(179,66,194)] rounded text-3xl text-[rgb(179,66,194)] hover:bg-[rgb(179,66,194)] hover:text-white transition-all max-md:text-2xl">
+            <a href="#contact"
+                class="font-roboto-condensed p-2 border-1 border-[rgb(179,66,194)] rounded text-lg hover:bg-[rgb(179,66,194)] transition-all no-underline"
+                style="text-decoration: none;">
                 Veja mais ⤵
-            </button>
+            </a>
         </div>
         <div>
-            <img class="animation-img w-[380px] max-md:w-[320px]" src="./components/img/banner.svg" alt="marketing-img">
+            <img class=" animation-img w-[380px] max-md:w-[320px]" src="./components/img/banner.svg"
+                alt="marketing-img">
         </div>
     </section>
 
@@ -155,8 +154,10 @@
                 <p class="font-bitcount text-[rgb(179,66,194)] text-8xl m-0">➲</p>
             </div>
         </section>
+
         <!--About US--><br><br><br><br>
-        <div class="title m-5 mb-3 pl-5 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
+        <div id="about"
+            class="title m-5 mb-3 pl-5 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
             <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossa História</p>
             <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
         </div>
@@ -198,7 +199,7 @@
             </div>
         </section>
 
-        <!--Our Solutions--><br><br><br>
+        <!--Benefits--><br><br><br>
         <section class="bg-[rgb(135,48,147)]/20 pb-3 w-full">
             <div class="title m-5 mb-3 pl-5 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <p class="font-roboto-condensed font-bold text-white text-3xl m-0">Benefícios</p>
@@ -245,7 +246,8 @@
         </section>
 
         <!--Our Solutions--><br><br><br>
-        <div class="title m-5 mb-3 pl-5 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
+        <div id="solutions"
+            class="title m-5 mb-3 pl-5 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
             <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Nossos Serviços</p>
             <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
         </div><br><br>
@@ -329,6 +331,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Clients --><br><br><br><br>
         <section class="bg-[rgb(135,48,147)]/20 pb-5 w-full">
             <div class="title m-5 mb-3 pl-5 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
@@ -359,8 +362,9 @@
             </article>
         </section>
 
-        <!-- Plains --><br><br><br>
-        <div class="title m-5 mb-3 pl-5 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
+        <!--Plains--><br><br><br>
+        <div id="plains"
+            class="title m-5 mb-3 pl-5 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
             <p class="font-roboto-condensed font-bold text-[rgb(179,66,194)] text-3xl m-0">Planos Imperdivéis </p>
             <div class="mt-1 w-10 h-1 bg-[rgb(179,66,194)] rounded-full"></div>
         </div>
@@ -419,6 +423,7 @@
             <p class="text-center text-gray-500 text-sm mt-4">
                 * Valores estimados — podem variar conforme a necessidade do cliente.
             </p>
+
         </section>
 
         <!-- Depoiments --><br><br><br>
@@ -470,9 +475,11 @@
             </div>
         </section><br><br><br>
     </main>
-    <footer class="relative p-[3rm] mt-5">
+
+    <footer id="contact" class="relative p-[3rm] mt-5">
         <div class="flex flex-col justify-center items-center relative z-10">
-            <p class="text-3xl font-semibold p-0 mb-3 text-[rgb(120,44,130)] max-md:text-center">Entre em contato
+            <p class="text-3xl font-roboto-condensed font-semibold p-0 mb-3 text-[rgb(120,44,130)] max-md:text-center">
+                Entre em contato
                 conosco e descubra
                 como podemos lhe ajudar!</p>
             <p class="text-sm p-0 m-0 text-center max-w-150 text-white">Lorem ipsum dolor sit amet consectetur,
@@ -522,5 +529,4 @@
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

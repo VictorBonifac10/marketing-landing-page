@@ -14,6 +14,19 @@ body {
     background-color: #1b1b1b;
 }
 
+a{
+    color: rgb(179, 66, 194);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+#offcanvasNavbar {
+    background-color: #1b1b1b;
+}
+
 /*Navbar*/
 
 .navbar {
@@ -38,7 +51,6 @@ body {
 .animation-img {
     animation: float 6s ease-in-out infinite;
 }
-
 
 @keyframes float {
 

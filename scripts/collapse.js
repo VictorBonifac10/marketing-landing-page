@@ -11,7 +11,6 @@
     }
 
     function openPanel(btn) {
-        // Fechar outros (para ter comportamento "apenas 1 aberto")
         buttons.forEach(b => {
             if (b !== btn && b.getAttribute('aria-expanded') === 'true') closePanel(b);
         });
@@ -22,7 +21,6 @@
         if (icon) icon.textContent = '−';
         const panel = document.getElementById(btn.getAttribute('aria-controls'));
         if (panel) {
-            // definir maxHeight igual ao scrollHeight para permitir transição suave
             panel.style.maxHeight = panel.scrollHeight + 'px';
         }
     }
@@ -38,7 +36,6 @@
         });
     });
 
-    // Em resize, atualiza altura dos painéis abertos (quando conteúdo muda)
     window.addEventListener('resize', () => {
         buttons.forEach(btn => {
             if (btn.getAttribute('aria-expanded') === 'true') {
