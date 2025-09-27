@@ -2,6 +2,10 @@
 
 import { clientsData } from './data.js';
 
+// --> AOS Library
+
+AOS.init();
+
 // --> navbar
 
 window.addEventListener('scroll', () => {
