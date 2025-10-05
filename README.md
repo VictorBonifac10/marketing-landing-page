@@ -3,7 +3,7 @@ Projeto de landing page responsiva criado exclusivamente com HTML5, TailwindCSS,
 
 ## 💻 Demonstração
 
-<img src="./assets/readme/readme.png" alt="preview" width="500" />
+<img src="./components/readme/readme.png" alt="preview" width="500" />
 
 🔗 [Acesse aqui a versão online](https://uptrendmarketing.netlify.app/)
 
